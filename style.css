@@ -41,12 +41,12 @@ header{
     margin-bottom: 15%;
 
 }
-
+/*logo class for main heading*/
 .#logo{
     
     text-align: center;
 }
-
+/*container for veiwport h1 element*/
 .welcome{
     z-index: 100;
     position: absolute;
@@ -60,7 +60,7 @@ header{
     color:var(--secondary);
 }
 
-    
+ /*selector for h1 element*/    
 .intro{
     font-size: 48px;
     font-weight: bold;
@@ -72,7 +72,7 @@ header{
     margin: 0;
 }
 
-
+/*selector for logo in navigation bar*/
 .logo-2{
     display: flex;
     align-items: center;
@@ -89,7 +89,7 @@ header{
     font-family: var(--font-family-2);
     font-weight: bold;
 }
-
+/*nav bar selector*/
 nav{
     display: flex;
     justify-content: space-between;
@@ -100,7 +100,7 @@ nav{
     margin-bottom: 3%;
 
 }
-
+/*nar bar items*/
 ul{
     margin: 0;
     padding: 1rem 0;
@@ -109,7 +109,6 @@ ul{
     width:50%;
     background-color:var(--background) ;
     padding-right: 2%;
-    
     
 }
 
@@ -137,7 +136,7 @@ ul{
 }
 
 
-
+/*selector for nav bar button*/
 
 .btn{
     font-family: var(--font-family-1);
@@ -157,37 +156,24 @@ ul{
     background-color: var(--hover-button);
     color: var(--heading);
 }
-
+/*selector for image viewport image container and content*/
 .main-container{
     display:flex;
     flex-direction: row;
     justify-content:space-evenly;
     text-align: center;
 }
-h3{
-    color:var(--secondary);
-    font-size: 1.5rem;
-}
-h3::before{
-    content:open-quote;
-    font-size: 2rem;
-    color: var(--heading);
 
-}
 
-h3::after{
-    content:open-quote;
-    font-size: 2rem;
-    color: var(--heading);
 
-}
+/*selector for the container of viewport images*/
 .container{
     width: 75%;
     height: 200px;
     position: relative;
     
 }
-
+/*selectors for viewport images*/
 .box-1{
     width: 50%;
     height: 300px;
@@ -242,6 +228,7 @@ section{
 
 }
 
+/*selector for profile heading*/
 .profile{
     padding:10px 0;
     font-weight: bold;
@@ -253,6 +240,7 @@ section{
     margin: 0;
 }
 
+/*selector for profile images*/
 .image-profile{
     width: 30%;
     height: 30%;
@@ -275,23 +263,60 @@ section{
     height: auto;
 }
 
+/*heading for creation and calloboration*/
 h1{
     text-align:center ;
     margin-bottom: 5%;
     font-size: 2rem;
     font-weight: bold;
     color: var(--secondary);
+
+
+}/*h3 click me*/
+h3{
+    color:var(--secondary);
+    font-size: 1.5rem;
+}
+h3::before{
+    content:open-quote;
+    font-size: 2rem;
+    color: var(--heading);
+
 }
 
-p{
+h3::after{
+    content:open-quote;
+    font-size: 2rem;
+    color: var(--heading);
+
+}
+
+/*profile content paragraph*/ 
+
+p {
     line-height: 1.5;
 }
 
-.buttons{
+/*link button container*/
+.buttons-container{
     display:flex;
     justify-content: space-evenly;
     padding-top: 5%;
     flex:1 1 0;
+}
+
+/*link buttons*/
+
+button {
+    font-family: var(--font-family-1);
+    font-size: 1rem;
+    background-color: var(--heading);
+    border: none;
+    border-radius: 5px;
+    padding:0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.5ms ease-in;
+    color:var(--secondary);
 }
 
 .btn-2{
@@ -304,19 +329,6 @@ p{
     
 }
 
-button {
-    font-family: var(--font-family-1);
-    font-size: 1rem;
-    background-color: var(--heading);
-    border: none;
-    border-radius: 5px;
-    padding:0.5rem 1rem;
-    cursor: pointer;
-    transition: all 0.5ms ease-in;
-    color:var(--secondary);
-
-
-}
 
 button:hover{
     background-color:rgb(161, 88, 40,0.7);
